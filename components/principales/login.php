@@ -105,7 +105,7 @@ $translations = $lang_data['translations'] ?? [];
                     <a href="/proyecto-sena/components/principales/forgot_password.php"><?= $translations['forgot_password'] ?? '¿Olvidaste tu contraseña?' ?></a>
 
                     <div class="form-actions">
-                        <button type="submit" class="continue-button"><?= $translations['submit'] ?? 'Ingresar' ?></button>
+                        <button type="submit" class="continue-button"><?= $translations['login_title'] ?? 'Ingresar' ?></button>
                     </div>
                 </form>
             </div>

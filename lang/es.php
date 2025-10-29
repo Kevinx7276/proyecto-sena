@@ -132,7 +132,7 @@ return [
     'email' => 'Correo electrónico',
     'access_email' => 'Este correo será usado para acceder al sistema',
     'confirm_password' => 'Confirmar contraseña',
-    'submit' => 'Iniciar Sesion',
+    'submit' => 'Registrar',
         'editar_slide' => 'Editar Slide',
     'titulo' => 'Título',
     'descripcion' => 'Descripción',
