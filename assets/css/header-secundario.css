@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-container {
+    background-color: #2a7f00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.375rem;
+}
+
+.logo-jke, .logo-sena {
+    height: 3.75rem;
+}
+
+.logo-jke {
+    border-radius: 0.9375rem;
+}
+
+.titulo-header {
+    color: white;
+    margin: 0.3125rem;
+    margin-right: 80%;
+    font-weight: bold;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.nav-header {
+    display: flex;
+    background-color: #e0e0e0;
+    border-bottom: 0.25rem solid #003366;
+    justify-content: center;
+}
+
+.nav-header a {
+    flex: 1;
+    text-align: center;
+    padding: 0.9375rem 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-left: 0.0625rem solid #ccc;
+    border-right: 0.0625rem solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+}
+
+.nav-header a:first-child {
+    border-left: none;
+}
+
+.nav-header a:last-child {
+    border-right: none;
+}
+
+.nav-header a:hover {
+    background-color: #d0d0d0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+@media (max-width: 37.5rem) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-header a {
+        font-size: 0.875rem;
+        padding: 0.625rem;
+    }
+
+    .titulo-header {
+        margin: 0.625rem 0;
+    }
+}
+
+
+/* ==== MODO OSCURO SOLO main-content Y sidebar ==== */
+
+/* Fondos de contenedores */
+body.dark .sidebar,
+body.dark .main-content {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+/* Cambios en textos dentro del sidebar */
+body.dark .sidebar-nav .nav-item,
+body.dark .sidebar-utilities .utility-item {
+  color: #ffffff;
+}
+
+/* Hover en modo oscuro */
+body.dark .nav-item:hover,
+body.dark .utility-item:hover {
+  background-color: #333;
+}
+
+/* ...puedes agregar aquí más reglas específicas si tienes más en tu CSS....sidebar.sidebar-open {
+  transform: translateX(0);
+}
+
+/* Fondo oscuro detrás del sidebar */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
+
+/* Botón hamburguesa */
+.sidebar-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  z-index: 1101;
+  color: white;
+}
+/* Fondos de contenedores */
+body.dark .sidebar,
+body.dark .main-content {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+/* Cambios en textos dentro del sidebar */
+body.dark .sidebar-nav .nav-item,
+body.dark .sidebar-utilities .utility-item {
+  color: #ffffff;
+}
+
+/* Hover en modo oscuro */
+body.dark .nav-item:hover,
+body.dark .utility-item:hover {
+  background-color: #333;
+}
+
+/* ...puedes agregar aquí más reglas específicas si tienes más en tu CSS...

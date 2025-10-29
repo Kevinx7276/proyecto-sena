@@ -1,0 +1,30 @@
+.footer {
+    background-color: #2a7f00;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    border-top: 0.125rem solid #ffffff;
+    font-size: 0.95rem;
+    word-wrap: break-word;
+
+    /* Footer fijo */
+    position: fixed;
+    bottom: 0;
+    left: 14.5rem; /* Empieza después del sidebar (280px ≈ 17.5rem) */
+    right: 0;
+    z-index: 100;
+}
+
+/* Responsive para móvil */
+@media (max-width: 48rem) {
+    .footer {
+        left: 0;
+        right: 0;
+    }
+}
+body.dark .footer {
+  background-color: #1e1e1e; /* Darker background */
+  color: #e0e0e0;
+  border-top: 0.125rem solid #333; /* Darker border */
+}
