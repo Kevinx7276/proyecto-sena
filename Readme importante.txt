@@ -14,3 +14,8 @@ con CTROL + B para poder ejecutar exitosamente el PROYECTO:
 debe quitar el simbolo ";" para activar el servicio
 
 si no sale con el ";" es que ya esta activado el servicio (Puede comprobarlo haciendo CTROL + B y buscando los servicios sin el simbolo ";")
+
+credenciales administrador:
+
+usuario: admin@correo.com
+contraseña: 123456789
